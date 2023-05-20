@@ -1,0 +1,216 @@
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgb(0, 0, 0) 100%);
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner CSS */
+
+.container {
+  border-bottom: 1px solid gray;
+}
+
+.head {
+  height: 6vh;
+  border-bottom: 1px solid gray;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  box-shadow: 5px 5px 5px 5px rgb(21, 21, 21);
+  color: whitesmoke;
+}
+
+.container .banner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  height: 75vh;
+}
+
+.container .banner div {
+  width: 100%;
+  color: whitesmoke;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.container .banner div p {
+  color: gray;
+}
+
+.container .banner .image_part img {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  box-shadow: 5px 5px 5px 5px rgb(11, 11, 11);
+  border-radius: 10px;
+  border: 5px solid rgb(21, 21, 21);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .container .banner div {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .container .banner .image_part img {
+    width: 48vw;
+    height: 55vh;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .banner div {
+    width: 32%;
+    margin-left: 2%;
+  }
+
+  .container .banner .image_part {
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+}
+
+
+/* Search Bar CSS*/
+
+.search_bar {
+  color: white;
+  border-bottom: 1px solid gray;
+  padding: 2%;
+  padding-top: 0;
+}
+
+.search_bar h2 {
+  font-size: 2.5em;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+}
+
+.search_bar .form_input label {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+}
+
+.search_bar .form_input select,
+.form_input input[type="text"] {
+  width: 20vw;
+  height: 7vh;
+  font-size: 1em;
+  background-color: rgb(21, 21, 21);
+  color: whitesmoke;
+}
+
+.form_input input[type="text"] {
+  border: 1px solid gray;
+  height: 6.5vh;
+}
+
+.form_input button {
+  width: 10vw;
+  height: 6vh;
+  margin: 2%;
+  font-size: 1em;
+  font-weight: 700;
+  background-color: rgb(21, 21, 21);
+  color: whitesmoke;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.form_input button:hover {
+  transform: scale(1.1);
+}
+
+/* Cards CSS*/
+.cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+}
+
+.cards .card {
+  border: 1px solid gray;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+.cards .card img {
+  width: 150px;
+  height: 170px;
+}
+
+.cards .card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn_page {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.btn_page button {
+  cursor: pointer;
+  margin: 2%;
+  padding: 1%;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.btn_page button:hover {
+  background-color: rgb(21, 21, 21);
+  color: whitesmoke;
+}
+
+
+/* POP UP CSS*/
+
+.popup {
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  color: white;
+  width: auto;
+  background-color: rgb(21, 21, 21);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.9);
+  height: auto;
+  padding: 2%;
+  width: 40vw;
+}
+
+.popup_conatiner .pop_head {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  border-bottom: 2px solid wheat;
+}
+
+.pop_head p {
+  margin-right: auto;
+}
+
+.pop_head span:hover {
+  color: red;
+  cursor: pointer;
+}

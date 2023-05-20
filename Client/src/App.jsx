@@ -1,10 +1,11 @@
-
-
-import React from 'react'
+import { ToastContextProvider } from "./Components/context/ToastContext"
+import Home from "./Components/Home/Home"
 
 export const App = () => {
   return (
-    <div>App</div>
+    <ToastContextProvider>
+      <Home/>
+    </ToastContextProvider>
   )
 }
 
