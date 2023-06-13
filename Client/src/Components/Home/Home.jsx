@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {   // Fteching all the capsules data
     // console.log(import.meta.env.VITE_APITOKEN)
-    axios.get("http://localhost:5000/api/v3/capsules",
+    axios.get("https://spacexdata-api.onrender.com/api/v3/capsules",
       { headers: { Authorization: import.meta.env.VITE_APITOKEN } }) // APITOKEN For Auth..
       .then((res) => {
         console.log(res.data)
